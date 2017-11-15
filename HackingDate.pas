@@ -3,5 +3,5 @@ program HackingDate;
 uses
     sysutils;
 begin
-	Writeln(FormatDateTime('yyyy-mm-dd', Now));
+    Writeln(FormatDateTime('yyyy-mm-dd', Now));
 end.
