@@ -1,0 +1,1 @@
+println(Dates.format(now(), "yyyy-mm-dd"))

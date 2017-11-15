@@ -1,0 +1,1 @@
+print new Date().format('yyyy-MM-dd')
