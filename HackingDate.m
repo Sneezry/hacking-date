@@ -1,0 +1,1 @@
+disp(datestr(now, 'yyyy-mm-dd'))
