@@ -1,11 +1,8 @@
 PROGRAM hacking_date
-
   CHARACTER(len=7) :: date
   CALL get_YYYY_MM_DD(date)
   PRINT*, date
-
 CONTAINS
-
   SUBROUTINE get_YYYY_MM_DD(date)
     CHARACTER(len=7), INTENT(out) :: date
     CHARACTER(len=2) :: dd
@@ -18,5 +15,4 @@ CONTAINS
     WRITE(yyyy, '(i4)') values(1)
     date = yyyy // '-' // mm // '-' // dd
   END SUBROUTINE get_YYYY_MM_DD
-  
 END PROGRAM hacking_date
