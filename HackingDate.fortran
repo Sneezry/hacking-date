@@ -8,19 +8,15 @@ CONTAINS
 
   SUBROUTINE get_YYYY_MM_DD(date)
     CHARACTER(len=7), INTENT(out) :: date
-
     CHARACTER(len=2) :: dd
     CHARACTER(len=3) :: mons(12)
     CHARACTER(len=4) :: yyyy
     INTEGER :: values(8)
-
     CALL DATE_AND_TIME(VALUES=values)
-
     WRITE(  dd, '(i2)') values(3)
     WRITE(  mm, '(i2)') values(2)
     WRITE(yyyy, '(i4)') values(1)
-
     date = yyyy // '-' // mm // '-' // dd
   END SUBROUTINE get_YYYY_MM_DD
-
+  
 END PROGRAM hacking_date
