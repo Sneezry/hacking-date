@@ -3,4 +3,4 @@
                         [coerce :as tc]
                         [format :as f])))
 
-(f/unparse (f/formatter "yyyyMMdd") (time/now))
+(f/unparse (f/formatter "yyyy-MM-dd") (time/now))
