@@ -1,2 +1,2 @@
-%let today=%sysfunc(today(),yymmddn8.);
+%let today = %sysfunc(today(), yymmddn8.);
 %put &today.;
