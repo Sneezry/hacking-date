@@ -1,0 +1,2 @@
+HackingDate:
+	printf "$$(date +%F)"
