@@ -7,5 +7,5 @@ import (
 
 func main() {
     t := time.Now()
-    fmt.Printf("%d-%02d-%02d\n", t.Year(), t.Month(), t.Day())
+    fmt.Println(time.Now().Format("2006-01-02"))
 }
