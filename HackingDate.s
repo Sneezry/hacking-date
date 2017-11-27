@@ -10,8 +10,7 @@ call put_bcd2 \ inc bx
 mov al, dh \ call put_bcd2
 inc bx \ mov al, ch
 call put_bcd2 \ mov al, cl
-call put_bcd2
-ret
+call put_bcd2 \ ret
 put_bcd2:
 push ax \ shr ax, 4
 and ax, 0fh \ add ax, '0'
