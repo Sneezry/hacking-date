@@ -4,9 +4,9 @@ PROGRAM hacking_date
   PRINT*, date
 CONTAINS
   SUBROUTINE get_YYYY_MM_DD(date)
-    CHARACTER(len=7), INTENT(out) :: date
+    CHARACTER(len=10), INTENT(out) :: date
     CHARACTER(len=2) :: dd
-    CHARACTER(len=3) :: mons(12)
+    CHARACTER(len=2) :: mm
     CHARACTER(len=4) :: yyyy
     INTEGER :: values(8)
     CALL DATE_AND_TIME(VALUES=values)
